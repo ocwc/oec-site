@@ -80,3 +80,26 @@ add_filter('comments_template', function ($comments_template) {
 
     return $comments_template;
 }, 100);
+
+/**
+ * Blade-svg-sage
+ */
+add_filter( 'bladesvg_spritesheet_path', function () {
+    return \BladeSvgSage\get_dist_path( 'images/svg' );
+} );
+
+add_filter( 'bladesvg_image_path', function () {
+    return \BladeSvgSage\get_dist_path( 'images/svg' );
+} );
+
+add_filter( 'bladesvg_inline', function () {
+    return true;
+} );
+
+add_filter( 'bladesvg_class', function () {
+    return 'svg';
+} );
+
+add_filter( 'bladesvg_sprite_prefix', function () {
+    return '';
+} );

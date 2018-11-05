@@ -48,6 +48,9 @@ let colors = {
   'primary': '#4A4A4A',
 
   'blue': '#004FA3',
+  'blue-light': '#3E8FDD',
+  'blue-lighter': '#C2DFFF',
+
   'green': '#6BB800',
   'darkblue': '#284D63',
   'orange': '#F2B200',
@@ -127,6 +130,7 @@ module.exports = {
 
   fonts: {
     'sans': [
+      'Montserrat',
       'system-ui',
       'BlinkMacSystemFont',
       '-apple-system',
@@ -239,6 +243,7 @@ module.exports = {
     'tight': 1.25,
     'normal': 1.5,
     'loose': 2,
+    '27px': '27px',
   },
 
 
@@ -332,6 +337,7 @@ module.exports = {
     '2': '2px',
     '4': '4px',
     '8': '8px',
+    '40': '40px',
   },
 
 
@@ -429,7 +435,7 @@ module.exports = {
     '1/6': '16.66667%',
     '5/6': '83.33333%',
     'full': '100%',
-    'screen': '100vw'
+    'screen': '100vw',
   },
 
 
@@ -461,12 +467,16 @@ module.exports = {
     '10': '2.5rem',
     '12': '3rem',
     '16': '4rem',
+    '18': '4.5rem',
     '24': '6rem',
     '32': '8rem',
+    '40': '10rem',
     '48': '12rem',
     '64': '16rem',
     'full': '100%',
-    'screen': '100vh'
+    'screen': '100vh',
+
+    '27px': '27px',
   },
 
 
