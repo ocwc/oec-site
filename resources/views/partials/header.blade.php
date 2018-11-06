@@ -10,7 +10,7 @@
             <input
               class="search-form h-27px px-2 w-48
                     bg-transparent
-                     border-white border rounded-sm
+                     border-blue-lighter border rounded-sm
                      text-sm text-blue-lighter"
               type="text" placeholder="Search" name="s">
           </form>
