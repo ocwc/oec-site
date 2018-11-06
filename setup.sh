@@ -1,3 +1,5 @@
+#!/usr/bin/env bash
+
 wp theme activate oec-site/resources
 
 wp menu delete top_navigation
@@ -13,7 +15,22 @@ wp menu item add-custom top_navigation 'projects' '/projects'
 MENU=`wp menu create primary_navigation --porcelain`
 wp menu location assign primary_navigation primary_navigation
 
-wp menu item add-custom primary_navigation 'oe resources' '#'
-wp menu item add-custom primary_navigation 'members' '#'
-wp menu item add-custom primary_navigation 'activities' '#'
-wp menu item add-custom primary_navigation 'about' '#'
+SUBMENU=`wp menu item add-custom primary_navigation 'oe resources' '#' --porcelain`
+wp menu item add-custom primary_navigation 'Guides' '#' --parent-id=${SUBMENU}
+wp menu item add-custom primary_navigation 'Search Engines' '#' --parent-id=${SUBMENU}
+wp menu item add-custom primary_navigation 'Case Studies' '#' --parent-id=${SUBMENU}
+
+SUBMENU=`wp menu item add-custom primary_navigation 'members' '#'  --porcelain`
+wp menu item add-custom primary_navigation 'Guides' '#' --parent-id=${SUBMENU}
+wp menu item add-custom primary_navigation 'Search Engines' '#' --parent-id=${SUBMENU}
+wp menu item add-custom primary_navigation 'Case Studies' '#' --parent-id=${SUBMENU}
+
+SUBMENU=`wp menu item add-custom primary_navigation 'activities' '#'  --porcelain`
+wp menu item add-custom primary_navigation 'Guides' '#' --parent-id=${SUBMENU}
+wp menu item add-custom primary_navigation 'Search Engines' '#' --parent-id=${SUBMENU}
+wp menu item add-custom primary_navigation 'Case Studies' '#' --parent-id=${SUBMENU}
+
+SUBMENU=`wp menu item add-custom primary_navigation 'about' '#'  --porcelain`
+wp menu item add-custom primary_navigation 'Guides' '#' --parent-id=${SUBMENU}
+wp menu item add-custom primary_navigation 'Search Engines' '#' --parent-id=${SUBMENU}
+wp menu item add-custom primary_navigation 'Case Studies' '#' --parent-id=${SUBMENU}

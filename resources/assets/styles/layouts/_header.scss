@@ -4,41 +4,65 @@
   @apply inline-block;
 }
 
-.nav-dropdown a {
+.sub-menu > li > a {
+  padding: 6px 20px 6px;
+  transition: 0.2s ease;
+  white-space: nowrap;
+
+  @apply w-full inline-block border-none text-blue-lighter leading-27px;
+}
+
+.nav-dropdown li {
+  @apply relative;
+}
+
+.nav-dropdown > li > a {
   padding: 5px 20px 8px;
   transition: 0.2s ease;
 
   @apply inline-block mt-2 text-blue-lighter leading-27px;
 }
 
-.nav-top a {
+.nav-top > li > a {
   transition: 0.2s ease;
 
   @apply text-blue-lighter leading-27px;
 }
 
-.nav-dropdown a:hover {
-  @apply bg-blue-light text-white;
+.sub-menu {
+  @apply hidden absolute pin-l list-reset rounded-lg border-blue-light border-b-8 border-t-8;
+
+  top: 48px;
+  border-top-left-radius: 0;
 }
 
-.nav-dropdown a::after {
-  content: '';
-
-  @apply block border-b-2 border-transparent;
-}
-
-.nav-dropdown a:hover::after {
-  @apply border-white;
+.sub-menu .menu-item {
+  @apply border-b-2 border-blue-light bg-blue;
 }
 
 .nav-top a:hover {
   @apply text-white;
 }
 
+.nav-dropdown > li:hover > a,
+.sub-menu > li:hover > a {
+  @apply bg-blue-light text-white;
+}
+
+.nav-dropdown > li > a::after {
+  content: '';
+
+  @apply block border-b-2 border-transparent;
+}
+
+.nav-dropdown > li:hover > a::after {
+  @apply border-white;
+}
+
 .nav-primary {
   max-width: 625px;
 }
 
-.sub-menu {
-  @apply hidden;
+.nav-dropdown > .menu-item:hover .sub-menu {
+  @apply block;
 }
