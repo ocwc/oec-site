@@ -107,6 +107,8 @@ module.exports = {
     'md': '768px',
     'lg': '992px',
     'xl': '1200px',
+
+    'lg-down': {max: '992px'},
   },
 
 
@@ -358,7 +360,7 @@ module.exports = {
   |
   */
 
-  borderColors: global.Object.assign({ default: colors['grey-light'] }, colors),
+  borderColors: global.Object.assign({default: colors['grey-light']}, colors),
 
 
   /*
@@ -419,10 +421,12 @@ module.exports = {
     '10': '2.5rem',
     '12': '3rem',
     '16': '4rem',
+    '18': '4.5rem',
     '24': '6rem',
     '32': '8rem',
     '48': '12rem',
     '64': '16rem',
+    '100': '25rem',
     '1/2': '50%',
     '1/3': '33.33333%',
     '2/3': '66.66667%',
@@ -517,7 +521,7 @@ module.exports = {
   minHeight: {
     '0': '0',
     'full': '100%',
-    'screen': '100vh'
+    'screen': '100vh',
   },
 
 
@@ -873,6 +877,7 @@ module.exports = {
       center: true,
       padding: '1rem',
     }),
+    require('tailwindcss-flexbox-order')(),
   ],
 
 
