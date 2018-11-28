@@ -1,0 +1,17 @@
+.heading-1 {
+  font-size: 32px;
+
+  @apply font-semibold;
+
+  @screen md {
+    @apply text-6xl;
+  }
+}
+
+//.heading-2 {
+//
+//}
+
+.heading-4 {
+  @apply font-semibold text-2xl;
+}

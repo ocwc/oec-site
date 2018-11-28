@@ -4,8 +4,9 @@
     <div class="flex justify-between">
       <a href="{{ home_url('/') }}"
          class="brand
-                 flex items-center
-                 px-4 lg:pl-none"
+                 flex
+                 items-center lg:items-start
+                 pt-1 px-4 lg:pl-none"
       >
         @svg('logo-inverted', 'h-18 hidden lg:block')
         @svg('logo-inverted-mobile', 'h-10 lg:hidden')
@@ -47,7 +48,7 @@
         @endif
 
 
-        <div class="w-full py-1 border-b border-blue-lighter hidden lg:block"></div>
+        <div class="w-full py-1 border-b border-gray-light hidden lg:block"></div>
 
         @if (has_nav_menu('primary_navigation'))
           {!! wp_nav_menu(['theme_location' => 'primary_navigation',
