@@ -7,7 +7,6 @@
 
 <div class="container" role="document">
   @section('container')
-
     <div class="content">
       <main class="main">
         @yield('content')

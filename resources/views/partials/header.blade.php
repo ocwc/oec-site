@@ -20,8 +20,8 @@
       </a>
 
       <nav class="nav-primary bg-blue
-                  container lg:px-0
-                  pt-2 pb-6 lg:py-0
+                  container lg:mx-0
+                  pt-2 pb-6 lg:px-0 lg:py-0
                   absolute lg:static
                   flex-col lg:flex-row
                   flex-grow
