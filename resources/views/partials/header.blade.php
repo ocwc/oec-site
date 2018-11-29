@@ -43,8 +43,8 @@
         </form>
         @if (has_nav_menu('top_navigation'))
           {!! wp_nav_menu(['theme_location' => 'top_navigation',
-                           'menu_class' => 'nav-top list-reset inline text-sm',
-                           'container_class' => 'inline-block order-2 lg:w-100 lg:text-right']) !!}
+                           'menu_class' => 'nav-top list-reset inline text-lg lg:text-sm',
+                           'container_class' => 'inline-block order-2 lg:w-100 border-t border-white lg:border-transparent lg:text-right']) !!}
         @endif
 
 
